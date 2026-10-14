@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nagimo サポート</title>
+  <style>
+    :root { --bg:#16110E; --card:#261C16; --accent:#E8965A; --text:#F2E8DE; --sub:#B9ADA3; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:ui-rounded,-apple-system,BlinkMacSystemFont,"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+      line-height:1.8; -webkit-font-smoothing:antialiased;
+    }
+    .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+    header { text-align:center; padding:24px 0 8px; }
+    .mark { width:88px; height:88px; margin:0 auto; position:relative; }
+    .orb { position:absolute; left:20px; top:14px; width:48px; height:48px; border-radius:50%;
+      background:radial-gradient(circle at 50% 40%, #F8CFA2, #E8965A 55%, #B8672F);
+      box-shadow:0 0 32px rgba(232,150,90,0.45); }
+    .line { position:absolute; left:0; right:0; top:58px; height:3px; border-radius:2px;
+      background:linear-gradient(90deg, transparent, rgba(242,232,222,0.5) 30%, rgba(242,232,222,0.5) 70%, transparent); }
+    h1 { font-size:26px; font-weight:600; letter-spacing:0.06em; margin:12px 0 4px; }
+    .lead { color:var(--sub); margin:0; }
+    .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:18px 0; }
+    h2 { font-size:18px; margin:4px 0 12px; color:var(--accent); }
+    .faq { margin:14px 0; }
+    .q { font-weight:600; margin:0 0 4px; }
+    .a { margin:0; color:var(--sub); }
+    a { color:var(--accent); }
+    .contact a { font-weight:600; font-size:18px; }
+    footer { text-align:center; color:var(--sub); font-size:13px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true"><div class="orb"></div><div class="line"></div></div>
+      <h1>nagimo サポート</h1>
+      <p class="lead">「nagimo」のサポートページです。</p>
+    </header>
+
+    <div class="card contact">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・不具合のご報告は、以下のメールアドレスまでお気軽にご連絡ください。数日以内にお返事いたします。</p>
+      <p><a href="mailto:j61382584@gmail.com?subject=nagimo%20お問い合わせ">j61382584@gmail.com</a></p>
+      <p style="color:var(--sub);font-size:14px;">不具合のご報告時は、お使いの端末・iOS バージョン・発生した操作を書き添えていただけると助かります。</p>
+    </div>
+
+    <div class="card">
+      <h2>よくある質問</h2>
+
+      <div class="faq">
+        <p class="q">はじめに何を設定すればいいですか？</p>
+        <p class="a">初回の案内に沿って、スクリーンタイムと位置情報（常に）を許可し、家にいるときに「現在地を家に登録」してください。そのあと「家でロック」で、家では使いたくないアプリを選びます。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">なぜ位置情報を「常に」許可する必要があるのですか？</p>
+        <p class="a">家に着いた・出かけたことを、アプリを閉じていても判定してロックを切り替えるためです。位置情報は端末の中だけで使い、外部には送りません。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">家にいるのに「外出中」になる（またはその逆）</p>
+        <p class="a">位置の判定には数十〜数百メートルの誤差があります。「設定」で家の範囲の半径を広げてみてください（150m 以上がおすすめです）。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">どうしてもアプリを使いたいときは？</p>
+        <p class="a">ロック画面の「5分だけ使う」で、そのアプリだけ5分間使えます（1日3回まで・0時に回数が戻ります）。まとめて止めたいときは、ホームの「一時停止」から 15分／1時間／明日まで を選べます。時間が来ると自動でロックが戻ります。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">ロックがかからない</p>
+        <p class="a">「設定」で、スクリーンタイムと位置情報（常に）が許可されているかをご確認ください。時間帯を指定したアプリは、その時間帯の外ではロックされません。</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">アカウント登録は必要ですか？</p>
+        <p class="a">いいえ。登録やログインなしでご利用いただけます。設定はお使いの端末内にのみ保存されます。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>関連リンク</h2>
+      <p><a href="./">プライバシーポリシー</a></p>
+    </div>
+
+    <footer>
+      <p>nagimo</p>
+    </footer>
+  </div>
+</body>
+</html>

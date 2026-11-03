@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nagimo Support</title>
+  <style>
+    :root { --bg:#16110E; --card:#261C16; --accent:#E8965A; --text:#F2E8DE; --sub:#B9ADA3; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:ui-rounded,-apple-system,BlinkMacSystemFont,sans-serif;
+      line-height:1.8; -webkit-font-smoothing:antialiased;
+    }
+    .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+    header { text-align:center; padding:24px 0 8px; }
+    .mark { width:88px; height:88px; margin:0 auto; position:relative; }
+    .orb { position:absolute; left:20px; top:14px; width:48px; height:48px; border-radius:50%;
+      background:radial-gradient(circle at 50% 40%, #F8CFA2, #E8965A 55%, #B8672F);
+      box-shadow:0 0 32px rgba(232,150,90,0.45); }
+    .line { position:absolute; left:0; right:0; top:58px; height:3px; border-radius:2px;
+      background:linear-gradient(90deg, transparent, rgba(242,232,222,0.5) 30%, rgba(242,232,222,0.5) 70%, transparent); }
+    h1 { font-size:26px; font-weight:600; letter-spacing:0.06em; margin:12px 0 4px; }
+    .lead { color:var(--sub); margin:0; }
+    .card { background:var(--card); border-radius:16px; padding:20px 22px; margin:18px 0; }
+    h2 { font-size:18px; margin:4px 0 12px; color:var(--accent); }
+    .faq { margin:14px 0; }
+    .q { font-weight:600; margin:0 0 4px; }
+    .a { margin:0; color:var(--sub); }
+    a { color:var(--accent); }
+    .contact a { font-weight:600; font-size:18px; }
+    footer { text-align:center; color:var(--sub); font-size:13px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true"><div class="orb"></div><div class="line"></div></div>
+      <h1>nagimo Support</h1>
+      <p class="lead">The support page for nagimo. <a href="../support.html">日本語</a></p>
+    </header>
+
+    <div class="card contact">
+      <h2>Contact</h2>
+      <p>For questions or bug reports, feel free to email us. We usually reply within a few days.</p>
+      <p><a href="mailto:j61382584@gmail.com?subject=nagimo%20Support">j61382584@gmail.com</a></p>
+      <p style="color:var(--sub);font-size:14px;">When reporting a bug, it helps to include your device, iOS version, and what you were doing.</p>
+    </div>
+
+    <div class="card">
+      <h2>FAQ</h2>
+
+      <div class="faq">
+        <p class="q">What should I set up first?</p>
+        <p class="a">Follow the onboarding to allow Screen Time and Location (Always), then tap “Set Current Location as Home” while you’re at home. After that, choose the apps you don’t want to use at home under “Lock at Home”.</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Why does the app need Location “Always”?</p>
+        <p class="a">So it can detect when you arrive home or leave and switch locks, even when the app is closed. Your location is used only on your device and is never sent anywhere.</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">It says “Away” when I’m at home (or the other way around)</p>
+        <p class="a">Location detection can be off by tens to hundreds of meters. Try widening your home area’s radius in Settings (150 m or more is recommended).</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">What if I really need to use an app?</p>
+        <p class="a">Tap “Pause” on the home screen and choose 15 minutes, 1 hour, or until tomorrow. The lock comes back automatically when time’s up.</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Apps aren’t being locked</p>
+        <p class="a">Check in Settings that Screen Time and Location (Always) are allowed. Apps with available times aren’t locked during those times.</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Usage isn’t shown, or differs from other apps</p>
+        <p class="a">Usage shows only your locked apps, taken from iOS Screen Time. Check that Screen Time is allowed. It includes time used during available times and while paused. Because of how iOS counts usage, it may differ by a few minutes.</p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Do I need an account?</p>
+        <p class="a">No. You can use the app without signing up or signing in. Your settings are stored only on your device.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Links</h2>
+      <p><a href="./">Privacy Policy</a></p>
+    </div>
+
+    <footer>
+      <p>nagimo</p>
+    </footer>
+  </div>
+</body>
+</html>

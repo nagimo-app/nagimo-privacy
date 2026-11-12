@@ -5,7 +5,7 @@ lang: en
 
 # Privacy Policy (nagimo)
 
-Last updated: 2026-11-09
+Last updated: 2026-11-12
 
 [日本語](../)
 
@@ -38,7 +38,7 @@ You can revoke these permissions at any time in the iPhone Settings app.
 ## 4. Usage statistics (Firebase Analytics)
 To understand how features are used and improve them, the app uses Firebase Analytics (Google Analytics), provided by Google LLC. The following information is sent to Google's servers:
 
-- **Actions**: that you started a pause, and the length you chose (15 minutes, 1 hour, or until tomorrow).
+- **Actions**: that you started a pause, and the length you chose (15 minutes, 1 hour, or until tomorrow). If you end a pause before it expires, that you did so, the length you had chosen, and how many minutes it actually lasted.
 - **App usage**: information Firebase Analytics records automatically, such as opening the app for the first time or starting to use it.
 - **Device information**: such as device model, OS version, and language.
 - **App identifier**: an identifier Firebase Analytics assigns to each installation of the app. It is not tied to your name or any account.

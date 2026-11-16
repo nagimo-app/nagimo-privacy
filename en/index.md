@@ -26,19 +26,20 @@ Separately, the app collects usage statistics to improve itself (see Section 4).
 - **Lock settings**: the apps, categories, and websites to lock at each place, and their available times and days.
 - **Current state**: whether you are at home, and when a pause ends.
 - **Usage milestones**: whether you have used your locked apps past milestones such as 30 minutes or 1 hour today, so the lock screen can let you know (cleared when the day changes).
+- **Usage times**: the times at which you've used your locked apps for each 10 minutes in total, kept for 8 days to suggest times to lock. They never leave your device.
 
 This information is shared only between the app and its extensions (lock screen, schedule monitoring, and usage display), and never leaves your device.
 
 ## 3. Device permissions
 - **Location (Always)**: used to detect when you enter or leave the home area you registered, and switch locks automatically. "Always" is requested so this works even when the app is closed. Your location history is not stored and is never sent off your device. It isn't used if you choose Lock by Time Only.
-- **Screen Time**: used to lock the apps and websites you choose, and to show the usage of your locked apps. iOS only provides information about your chosen apps in anonymized form. Usage is displayed using a mechanism provided by iOS; the app does not store or send it (except for the usage milestones above).
+- **Screen Time**: used to lock the apps and websites you choose, and to show the usage of your locked apps. iOS only provides information about your chosen apps in anonymized form. Usage is displayed using a mechanism provided by iOS; the app does not store or send it (except for the usage milestones and usage times above).
 
 You can revoke these permissions at any time in the iPhone Settings app.
 
 ## 4. Usage statistics (Firebase Analytics)
 To understand how features are used and improve them, the app uses Firebase Analytics (Google Analytics), provided by Google LLC. The following information is sent to Google's servers:
 
-- **Actions**: that you started a pause, and the length you chose (15 minutes, 1 hour, or until tomorrow). If you end a pause before it expires, that you did so, the length you had chosen, and how many minutes it actually lasted. Which lock method you chose (Switch by Place or Lock by Time Only), whether you chose it during setup or in Settings, and which one is currently set.
+- **Actions**: that you started a pause, and the length you chose (15 minutes, 1 hour, or until tomorrow). If you end a pause before it expires, that you did so, the length you had chosen, and how many minutes it actually lasted. Which lock method you chose (Switch by Place or Lock by Time Only), whether you chose it during setup or in Settings, and which one is currently set. That a lock-time suggestion was shown, whether you applied or dismissed it, and if applied, how many hours it locks and whether you changed the time first.
 - **App usage**: information Firebase Analytics records automatically, such as opening the app for the first time or starting to use it.
 - **Device information**: such as device model, OS version, and language.
 - **App identifier**: an identifier Firebase Analytics assigns to each installation of the app. It is not tied to your name or any account.
